@@ -1,0 +1,14 @@
+name: ${project.name}
+main: ${mainClass}
+version: ${project.version}
+authors: [JerryWood]
+description: ${project.description}
+website:  http://plugish.com
+
+commands:
+  wr:
+    description: Shows a list of whitelisted users and when they're last online
+permissions:
+  wr.admin:
+    default: op
+    description: Allows the player or console to use the whitelist reporter

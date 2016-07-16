@@ -1,5 +1,6 @@
 package com.plugish.WhitelistReport;
 
+import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -8,9 +9,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Set;
+import java.util.*;
 
 public class WRCommand implements CommandExecutor {
 
@@ -30,9 +29,22 @@ public class WRCommand implements CommandExecutor {
 			return false;
 		}
 
+		try {
+			checkPlayers( commandSender );
+		} catch ( Exception e ) {
+			plugin.getLogger().severe( e.getMessage() );
+		}
+
+		return false;
+	}
+
+	public boolean checkPlayers( CommandSender commandSender ) throws Exception {
 		plugin.getLogger().info( "Starting Server Checks" );
 
+//		List< Map< String, String > > onlineData = new ArrayList<>();
+
 		Set< OfflinePlayer > players = plugin.getServer().getWhitelistedPlayers();
+		Integer key = 0;
 		for ( OfflinePlayer serverPlayer : players ) {
 			if ( !serverPlayer.hasPlayedBefore() ) {
 				plugin.getLogger().info( "Not Played - " + serverPlayer.getUniqueId() );
@@ -43,14 +55,15 @@ public class WRCommand implements CommandExecutor {
 			Long lastSeen = serverPlayer.getLastPlayed();
 
 			Date date = new Date( lastSeen );
-			DateFormat formatter = new SimpleDateFormat( "EEE, MMM d, ''yy" );
+			DateFormat formatter = new SimpleDateFormat( "yyyy-MM-dd" );
 			String dateFormatted = formatter.format( date );
 
 			plugin.getLogger().info( playerName + " - " + dateFormatted );
 			commandSender.sendMessage( playerName + " - " + dateFormatted );
-		}
 
-		return false;
+			key = key + 1;
+		}
+		return true;
 	}
 
 }

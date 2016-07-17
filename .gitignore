@@ -3,5 +3,6 @@
 .settings
 .project
 .classpath
+*reduced-pom.xml
 .idea/
 *.iml

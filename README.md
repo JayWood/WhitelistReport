@@ -1,7 +1,7 @@
 # Whitelist Report
 
-* Bukkit Versions: 1.7.10
-* Author: JayWood
+* Bukkit Versions: 1.7, 1.8, 1.9, 1.10
+* Author: [JayWood](http://plugish.com)
 * Java Version: 1.8
 
 ## Description

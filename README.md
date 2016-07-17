@@ -20,4 +20,4 @@ Simply put, with one command I can now display the dates users were last online.
 
 ## Screenshots
 
-![Resulting Output](https://raw.githubusercontent.com/JayWood/WhitelistReport/master/screenshot.png)
+![Resulting Output](https://raw.githubusercontent.com/JayWood/WhitelistReport/master/screenshot.jpg)

@@ -12,7 +12,7 @@ Simply put, with one command I can now display the dates users were last online.
 
 ## Commands
 
-`/wr` - Displays the report
+`/hitelistreport` - Displays the report
 
 ## Permissions
 
@@ -21,3 +21,11 @@ Simply put, with one command I can now display the dates users were last online.
 ## Screenshots
 
 ![Resulting Output](https://raw.githubusercontent.com/JayWood/WhitelistReport/master/screenshot.jpg)
+
+## Changelog
+
+### 1.0.2
+* Fixes conflict with Weather Restrictions ( changed command name )
+
+### 1.0.1
+& Initial Public Release

@@ -6,7 +6,7 @@ description: ${project.description}
 website:  http://plugish.com
 
 commands:
-  wr:
+  whitelistreport:
     description: Shows a list of whitelisted users and when they're last online
 permissions:
   wr.admin:

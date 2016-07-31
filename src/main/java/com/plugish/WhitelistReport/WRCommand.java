@@ -30,7 +30,7 @@ public class WRCommand implements CommandExecutor {
 
 	@Override
 	public boolean onCommand( CommandSender commandSender, Command command, String s, String[] strings ) {
-		if ( !command.getName().equalsIgnoreCase( "wr" ) ) {
+		if ( !command.getName().equalsIgnoreCase( "whitelistreport" ) ) {
 			return false;
 		}
 

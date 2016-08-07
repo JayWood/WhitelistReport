@@ -8,7 +8,7 @@ public class WhitelistReport extends JavaPlugin {
 	public void onEnable() {
 		getLogger().info( "This is now enabled" );
 
-		getCommand( "wr" ).setExecutor( new WRCommand( this ) );
+		getCommand( "whitelistreport" ).setExecutor( new WRCommand( this ) );
 	}
 
 }

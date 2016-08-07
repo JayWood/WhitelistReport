@@ -7,10 +7,10 @@
     <groupId>com.plugish.WhitelistReport</groupId>
     <artifactId>WhitelistReport</artifactId>
 
-    <!--<version>1.0.2-RC1-B1.10.2-R0.1</version>-->
-    <!--<version>1.0.2-RC1-B1.9.4-R0.1</version>-->
-    <version>1.0.2-RC1-B1.8.8-R0.1</version>
-    <!--<version>1.0.2-RC1-B1.7.10-R0.1</version>-->
+    <!--<version>1.0.3-RC1-B1.10.2-R0.1</version>-->
+    <!--<version>1.0.3-RC1-B1.9.4-R0.1</version>-->
+    <!--<version>1.0.3-RC1-B1.8.8-R0.1</version>-->
+    <version>1.0.3-RC1-B1.7.10-R0.1</version>
 
     <description>A plugin designed to list users and their last logged in times.</description>
 
@@ -18,8 +18,8 @@
 
         <!--<bukkitVersion>1.10.2-R0.1-SNAPSHOT</bukkitVersion>-->
         <!--<bukkitVersion>1.9.4-R0.1-SNAPSHOT</bukkitVersion>-->
-        <bukkitVersion>1.8.8-R0.1-SNAPSHOT</bukkitVersion>
-        <!--<bukkitVersion>1.7.10-R0.1-SNAPSHOT</bukkitVersion>-->
+        <!--<bukkitVersion>1.8.8-R0.1-SNAPSHOT</bukkitVersion>-->
+        <bukkitVersion>1.7.10-R0.1-SNAPSHOT</bukkitVersion>
 
         <mainClass>${project.groupId}.${project.artifactId}</mainClass>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

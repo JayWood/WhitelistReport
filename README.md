@@ -12,7 +12,7 @@ Simply put, with one command I can now display the dates users were last online.
 
 ## Commands
 
-`/hitelistreport` - Displays the report
+`/whitelistreport` - Displays the report
 
 ## Permissions
 
@@ -23,6 +23,9 @@ Simply put, with one command I can now display the dates users were last online.
 ![Resulting Output](https://raw.githubusercontent.com/JayWood/WhitelistReport/master/screenshot.jpg)
 
 ## Changelog
+
+### 1.0.3
+* Fixes my noobish Java mistake - forgot to update the command executor from the 1.0.2 change.
 
 ### 1.0.2
 * Fixes conflict with Weather Restrictions ( changed command name )
